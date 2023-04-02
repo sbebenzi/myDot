@@ -36,6 +36,20 @@ export default function Login() {
         );
     };
 
+    const renderNewUser = () =>{
+        return(
+            <View className="mt-2">
+                <TouchableOpacity
+                activeOpacity={0.7}
+                >
+                    <Text  className="font-bold inline-block">
+                        Novo? <Text className="font-bold text-violet-400 inline-block">Sign up</Text>
+                    </Text> 
+                </TouchableOpacity>
+            </View>
+        )
+    }
+
     return (
         <View className="ml-2">
             <View>
@@ -51,6 +65,10 @@ export default function Login() {
                 {renderPassword()}
             </View>
             <View>{renderLoginButton()}</View>
+
+            <View>
+                {renderNewUser()}
+            </View>
         </View>
     );
 }

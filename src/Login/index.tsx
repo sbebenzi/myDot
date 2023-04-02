@@ -3,7 +3,7 @@ import Login from "./Components/LogIn";
 
 export default function FullLogin(){
   return(
-    <View>
+    <View className="w-full h-full bg-background">
       <Login/>
     </View>
   )
