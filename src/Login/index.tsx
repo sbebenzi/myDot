@@ -1,19 +1,10 @@
-import {  Text, TextInput, View } from 'react-native';
+import { View } from "react-native";
+import Login from "./Components/LogIn";
 
-export default function Login() {
-
-  const renderUserName = () =>{
-    return(
-      <View>
-        <TextInput
-        placeholder='UserName'
-        />
-      </View>
-    )
-  }
-  return (
+export default function FullLogin(){
+  return(
     <View>
-      {renderUserName()}
+      <Login/>
     </View>
-  );
+  )
 }
