@@ -51,7 +51,7 @@ export default function Login() {
     }
 
     return (
-        <View className="ml-2">
+        <View className="ml-2 mt-6">
             <View>
                 <Text className="mt-6 text-white font-extrabold text-3xl">
                     Username:
