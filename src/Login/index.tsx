@@ -1,6 +1,19 @@
-import { View, TouchableOpacity,Text } from "react-native";
+import {  Text, TextInput, View } from 'react-native';
 
 export default function Login() {
-   return
-   
+
+  const renderUserName = () =>{
+    return(
+      <View>
+        <TextInput
+        placeholder='UserName'
+        />
+      </View>
+    )
+  }
+  return (
+    <View>
+      {renderUserName()}
+    </View>
+  );
 }
