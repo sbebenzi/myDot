@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import Login from "./components/LogIn";
+import Login from "./Components/LogIn";
 import { Header } from "../../components/Header";
 
 
