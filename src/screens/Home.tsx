@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { Header } from "../Components/Header";
+import { Header } from "../components/Header";
 
 export function Home(){
     return(

@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import Login from "./Components/LogIn";
-import { Header } from "../../Components/Header";
+import Login from "./components/LogIn";
+import { Header } from "../../components/Header";
 
 
 export default function FullLogin(){
