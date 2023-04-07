@@ -1,11 +1,13 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
+import  Home  from '../screens/Home';
+import Login from '../screens/Login/index';
+
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
-import { Home } from '../screens/Home';
-import Login from '../screens/Login/index';
-
 export function AppRoutes() {
+
     return (
         <Navigator screenOptions={{ headerShown: false }}>
             <Screen
