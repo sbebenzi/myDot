@@ -1,11 +1,11 @@
 import { View } from "react-native";
 import { FloatingAction } from "react-native-floating-action";
-// import { useNavigation } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 
 
 export function ButtonMenu() {
 
-    // const { navigate } = useNavigation();
+    const { navigate } = useNavigation();
 
     const actions = [
         {
@@ -35,7 +35,7 @@ export function ButtonMenu() {
                         if (name === 'bt_search') {
                             console.log('Search Photo');
                         } else if (name == 'bt_photo') {
-                            console.log('Open Camera');
+                            navigate('camera')
                         }
                     }
                 }
