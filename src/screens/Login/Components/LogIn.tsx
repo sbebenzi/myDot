@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function Login() {
-
+    
     const { navigate } = useNavigation();
     
     const renderUserName = () => {
@@ -47,7 +47,7 @@ export default function Login() {
                 <TouchableOpacity
                 activeOpacity={0.7}
                 >
-                    <Text  className="font-bold inline-block">
+                    <Text  className="font-bold inline-block text-white">
                         Novo? <Text className="font-bold text-violet-400 inline-block">Sign up</Text>
                     </Text> 
                 </TouchableOpacity>
