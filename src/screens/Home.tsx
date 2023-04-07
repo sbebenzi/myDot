@@ -1,9 +1,9 @@
 import { View } from "react-native";
-import { Header } from "../Components/Header";
+import { Header } from "../components/Header";
 
-export default function Home(){
+export function Home(){
     return(
-        <View className="flex-1 bg-background px-8 pt-16">
+        <View className="flex-1 bg-background pt-8">
             <Header/>
         </View>
 
