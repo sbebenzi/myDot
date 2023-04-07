@@ -6,7 +6,7 @@ import { useNavigation, useRoute } from '@react-navigation/native'
 
 import Logo from '../../assets/logo.svg';
 
-export function Header() {
+export default function Header() {
   const { navigate } = useNavigation();
 
   const route = useRoute();
