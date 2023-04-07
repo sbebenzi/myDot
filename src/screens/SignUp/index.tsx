@@ -1,6 +1,6 @@
 import Signup from "./components/Signup";
 import { Text, TextInput, TouchableOpacity, View } from "react-native"
-import { Header } from "../../components/Header";
+import  Header  from "../../components/Header";
 
 export default function SignUp(){
   return (
