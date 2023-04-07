@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { TextInput, View, NativeSyntheticEvent, TextInputChangeEventData, Text, TouchableOpacity } from "react-native";
 import colors from 'tailwindcss/colors';
 import { Feather } from '@expo/vector-icons';
+import { useNavigation } from "@react-navigation/native";
+
 
 export default function Signup() {
+    const { navigate } = useNavigation();
 
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
@@ -113,16 +116,31 @@ export default function Signup() {
         setConfirmPassword(e.nativeEvent.text)
     }
 
+    const renderSingUp = () =>{
+        return (
+            <View>
+                <TouchableOpacity
+                    className="w-full h-14 flex-row items-center justify-center bg-violet-800 rounded-lg mt-6"
+                    activeOpacity={0.7}
+                    onPress={() => navigate('login')}
+                >
+                    <Text className="font-semibold text-base text-wite ml-2">Singup</Text>
+                </TouchableOpacity>
+            </View>
+        );
+    }
+
     return (
         <View>
 
-            <Text className="mt-6 text-white font-extrabold text-4xl">
-                Create Acaunt
+            <Text className="mt-6 text-white font-extrabold text-4xl mb-16">
+                Create Account
             </Text>
             {renderUserName()}
             {renderPassword()}
             {renderConfirmPassword()}
             {renderSenhaDiferente()}
+            {renderSingUp()}
         </View>
     )
 }
