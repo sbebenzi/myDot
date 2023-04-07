@@ -9,13 +9,13 @@ export function ButtonMenu() {
 
     const actions = [
         {
-            icon: require("../../assets/search.png"),
+            icon: require("../../../../assets/search.png"),
             name: "bt_search",
             color: "#5b21b6",
             position: 2
         },
         {
-            icon: require("../../assets/camera.png"),
+            icon: require("../../../../assets/camera.png"),
             name: "bt_photo",
             color: "#5b21b6",
             position: 1
