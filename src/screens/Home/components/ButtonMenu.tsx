@@ -18,6 +18,7 @@ export function ButtonMenu() {
   const [openModal, setOpenModal] = useState(false);
   const [data, setData] = useState("");
 
+<<<<<<< HEAD:src/components/ButtonMenu.tsx
   const actions = [
     {
       icon: require("../../assets/search.png"),
@@ -32,6 +33,47 @@ export function ButtonMenu() {
       position: 1,
     },
   ];
+=======
+    const { navigate } = useNavigation();
+
+    const actions = [
+        {
+            icon: require("../../../../assets/search.png"),
+            name: "bt_search",
+            color: "#5b21b6",
+            position: 2
+        },
+        {
+            icon: require("../../../../assets/camera.png"),
+            name: "bt_photo",
+            color: "#5b21b6",
+            position: 1
+        },
+
+    ];
+
+    const renderFab= () => {
+        return (
+            <View>
+            <FloatingAction
+                showBackground={false}
+                actions={actions}
+                color="#5b21b6"
+                onPressItem={
+                    (name) => {
+                        if (name === 'bt_search') {
+                            console.log('Search Photo');
+                        } else if (name == 'bt_photo') {
+                            navigate('camera')
+                        }
+                    }
+                }
+
+            />
+        </View>
+        );
+    };
+>>>>>>> d8ceb30b8214194477c5d302673336266fbfdd0c:src/screens/Home/components/ButtonMenu.tsx
 
   const renderFloatingAction = () => {
     return (
