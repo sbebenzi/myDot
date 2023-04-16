@@ -124,14 +124,14 @@ export default function Signup() {
                     activeOpacity={0.7}
                     onPress={() => navigate('login')}
                 >
-                    <Text className="font-semibold text-base text-wite ml-2">Singup</Text>
+                    <Text className="font-semibold text-base text-wite ml-2">Sign up</Text>
                 </TouchableOpacity>
             </View>
         );
     }
 
     return (
-        <View>
+        <View className="ml-2 mt-6">
 
             <Text className="mt-6 text-white font-extrabold text-4xl mb-16">
                 Create Account
